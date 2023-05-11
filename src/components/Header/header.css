@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/*.pao-com-batata {
+    width: 100%;
+    height: 100vh;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 90%;
+}
+*/
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .logo {
+    color: black;
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .nav {
+    position: relative;
+}
+header .nav .nav-itens .item {
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .nav .nav-itens .item:before {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .nav .nav-itens .item:hover:before {
+    width: 100%;
+}
+/*.content h1 span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    color: aqua;
+}*/
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.5rem;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+/* video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+section {
+    padding: 100px 200px;
+}
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: pink;
+}
+.home .content {
+    z-index: 888;
+    color: #000;
+    width: 70%;
+    margin-top: 50px;
+}
+.home .content h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.home .content h1 span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.home .content p {
+    margin-bottom: 65px;
+    text-align: justify;
+}
+header .nav .nav-itens .ativo {
+    border-bottom: 2px solid black;
+}
+.home .content .link {
+    background: rgb(255, 255, 255);
+    padding: 15px 35px;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.home .content .link:hover {
+    transform: scale(2);
+}
+.home .icones {
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.home .icones .link-icone {
+    color: aliceblue;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+}
+.home .icones .link-icone:not(:last-child) {
+    margin-bottom: 20px;
+}
+.home .icones .link-icone:hover {
+    transform: scale(1.3);
+}
+@media (max-width: 1040px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+    header {
+        margin: 0;
+        padding: 15px;
+    }
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+    header .nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+    }
+    header .nav .nav-itens .item {
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    header .nav .nav-itens {
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+       /* box-shadow: 0 5px 25px;*/
+    }
+    header .nav .nav-itens .item:before {
+        background: #222;
+        height: 5px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .home .content h1{
+        font-size: 2.2em;
+        font-weight: 900;
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    nav .item-lista {
+        font-size: 1.2rem;
+    }
+    /* .home .icones .link-icone {
+        align-items: self-start;
+        color: aqua;
+        justify-content: center;
+    }  */
+}
